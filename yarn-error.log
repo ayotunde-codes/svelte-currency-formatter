@@ -1,0 +1,70 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install
+
+PATH: 
+  C:\Program Files\Common Files\Oracle\Java\javapath;;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\hp\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\hp\AppData\Local\Programs\Python\Python37\;C:\flutter\bin;C:\Users\hp\AppData\Local\Microsoft\WindowsApps;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hp\AppData\Local\Yarn\bin;C:\Users\hp\AppData\Local\Android\Sdk\platform-tools;C:\Users\hp\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  14.17.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:26)
+
+npm manifest: 
+  {
+    "name": "svelte-component-library",
+    "version": "0.2.0",
+    "svelte": "src/index.js",
+    "module": "dist/index.mjs",
+    "main": "dist/index.js",
+    "scripts": {
+      "build": "rollup -c",
+      "prepublishOnly": "npm run build",
+      "test": "jest test",
+      "test:watch": "yarn test -- --watch",
+      "storybook": "start-storybook -p 6006",
+      "build-storybook": "del-cli docs && build-storybook -c .storybook -o docs"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.9.0",
+      "@babel/preset-env": "^7.9.0",
+      "@rollup/plugin-node-resolve": "^6.0.0",
+      "@storybook/addon-actions": "^5.3.18",
+      "@storybook/addon-links": "^5.3.18",
+      "@storybook/addons": "^5.3.18",
+      "@storybook/svelte": "^5.3.18",
+      "@testing-library/jest-dom": "^5.3.0",
+      "@testing-library/svelte": "^3.0.0",
+      "babel-jest": "^25.2.6",
+      "babel-loader": "^8.1.0",
+      "del-cli": "^3.0.0",
+      "jest": "^25.2.7",
+      "rollup": "^1.20.0",
+      "rollup-plugin-svelte": "^5.0.0",
+      "rollup-plugin-terser": "^5.3.0",
+      "svelte": "^3.20.1",
+      "svelte-jester": "^1.0.5",
+      "svelte-loader": "^2.13.6"
+    },
+    "keywords": [
+      "svelte"
+    ],
+    "files": [
+      "src",
+      "dist"
+    ],
+    "dependencies": {}
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
